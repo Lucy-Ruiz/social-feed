@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Post from './Components/PostFolder/Post';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
+import PostList from './Components/PostList/PostList';
+import Header from './Components/NavBar/NavBar';
 import './App.css';
+
+
 
 function App() {
 
@@ -14,19 +18,19 @@ function App() {
   return (
     <div className='container-fluid'>
         <div className='row'>
-        <h3 style={{margin:'1em'}}>Social
-            <div className='text-muted'/>Feed</h3>
-            <div className='col-md-6'>
-                <div className='border-box'>
-                    <CreatePostForm CreatePostForm={createPostForm} />
+                <Header/>
+                <div className='post-area'>
+                    <div className='border-box'>
+                        <CreatePostForm addNewPost={createPostForm} />
+                    </div>
+                    <div className='border-box'>
+                        <PostList parentEntries={entries} />
+                    </div>
                 </div>
-                <div className='border-box'>
-                    <Post parentEntries={entries} />
-                </div>
-            </div>  
         </div>
     </div>
   );
 }
 
 export default App;
+

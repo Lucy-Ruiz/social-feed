@@ -1,3 +1,16 @@
 .form-grid{
     display: grid;
 }
+
+.text-update-input{
+    color: rgb(185, 197, 197);
+}
+
+.input-author{
+    width: 70%;
+}
+
+.input-status{
+    height: 100px;
+    width: 70%;
+}

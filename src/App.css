@@ -1,7 +1,24 @@
 .border-box {
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(167, 169, 170);
     margin: 1em;
     padding: 1em;
+    background-color: white;
+}
+
+.text-update-header{
+    color: rgb(140, 148, 148);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-update-input{
+    color: rgb(145, 149, 149);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.post-area{
+    background-color: rgb(153, 208, 235);
+    margin: 0;
+    padding: 0;
 }
